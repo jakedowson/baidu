@@ -4,13 +4,15 @@ public class student {
 
     private String name;
     private int age;
+    private int height;
 
     public student() {
     }
 
-    public student(String name, int age) {
+    public student(String name, int age,int height) {
         this.name = name;
         this.age = age;
+        this.height=height;
     }
 
 
@@ -30,12 +32,21 @@ public class student {
         this.age = age;
     }
 
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
 
     @Override
     public String toString() {
         return "student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", height=" + height +
                 '}';
     }
 }
